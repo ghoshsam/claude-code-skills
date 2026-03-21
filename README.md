@@ -4,7 +4,7 @@ This is the command library behind CogniSwitch's website — a 50-page site buil
 
 No designer. No agency. No Webflow. Just Claude Code, Gemini CLI, and a terminal.
 
-The thesis is simple: **you're not managing a tool, you're managing a relationship.** These commands are how that relationship stays structured. Each one replaces a role you'd otherwise hire for — strategist, designer, QA lead, DevOps — but the pipeline stays the same. Brief, review, build, check, ship. Stage for stage.
+The thesis is simple: **you're not managing a tool, you're managing a relationship.** These commands are how that relationship stays structured. Each one handles a role you'd otherwise hire for — strategist, designer, QA lead, DevOps. The pipeline is the same one every marketing team runs: brief, review, build, check, ship.
 
 The full story behind this approach was presented at [AI Boomi (March 2026)](https://cogniswitch.ai/ai-boomi-workshop).
 
@@ -24,7 +24,7 @@ These commands are organized around three ideas:
 
 ## The Pipeline
 
-The stages are identical to how a marketing team works. The speed is different.
+Same stages a marketing team runs. Faster.
 
 | Stage | Marketing Team (2020) | Solo + AI (2026) |
 |-------|----------------------|------------------|
@@ -193,7 +193,7 @@ cp commands/deploy.md your-project/.claude/commands/deploy.md
 cp -r skills/copyreview/ your-project/.claude/skills/copyreview/
 ```
 
-Most of these are CogniSwitch-specific (Prismic, our design system, our editorial pipeline). The interesting part isn't the commands themselves — it's the pattern. Document your process, give each stage a name, and let the AI execute the parts you've already figured out.
+Most of these are CogniSwitch-specific (Prismic, our design system, our editorial pipeline). Yours will look different. What transfers is the approach: document your process, give each stage a name, and let the AI execute the parts you've already figured out.
 
 ---
 
