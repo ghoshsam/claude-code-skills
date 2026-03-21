@@ -1,29 +1,69 @@
 # Claude Code Skills
 
-Custom skills for [Claude Code](https://claude.com/claude-code) — Anthropic's CLI for Claude.
+A collection of SKILL.md files for [Claude Code](https://claude.com/claude-code) — Anthropic's CLI for Claude.
 
-## Skills
+## Custom Project Skills
 
-### Copy Review (`/copyreview`)
+| Skill | Description |
+|-------|-------------|
+| [copyreview](skills/copyreview/) | AI writing pattern detector — 24 patterns based on Wikipedia's "Signs of AI writing" |
+| [blog-enhance](skills/blog-enhance/) | Visual treatment explorer for blog content (two-phase: explore then build) |
 
-A writing editor that identifies and removes signs of AI-generated text. Based on [Wikipedia's "Signs of AI writing"](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) page, maintained by WikiProject AI Cleanup.
+## Canvas TUI Skills
 
-Covers 24 patterns across content, language, style, communication, and hedging categories — plus guidance on adding voice and personality so "clean" text doesn't read as soulless.
+| Skill | Description |
+|-------|-------------|
+| [canvas](skills/canvas/canvas/) | Primary skill for terminal TUI components (calendars, documents, flights) |
+| [calendar](skills/canvas/calendar/) | Calendar display and meeting time picker |
+| [document](skills/canvas/document/) | Markdown document display and text selection |
+| [flight](skills/canvas/flight/) | Flight comparison and seat selection |
 
-**Usage:** `/copyreview` then paste your text.
+## Plugin Development Skills
 
-### Blog Enhance (`/blog-enhance`)
+| Skill | Description |
+|-------|-------------|
+| [plugin-structure](skills/plugin-dev/plugin-structure/) | Plugin directory layout, manifest, auto-discovery |
+| [skill-development](skills/plugin-dev/skill-development/) | Creating skills for Claude Code plugins |
+| [command-development](skills/plugin-dev/command-development/) | Slash command structure, frontmatter, dynamic arguments |
+| [agent-development](skills/plugin-dev/agent-development/) | Subagent definitions, triggering, system prompts |
+| [hook-development](skills/plugin-dev/hook-development/) | Event-driven hooks (PreToolUse, PostToolUse, Stop, etc.) |
+| [mcp-integration](skills/plugin-dev/mcp-integration/) | Model Context Protocol server integration |
+| [plugin-settings](skills/plugin-dev/plugin-settings/) | Plugin configuration via .local.md files |
 
-A two-phase visual treatment explorer for blog content. Phase 1 analyzes content sections and presents 2-3 visual treatment options per section (toggles, expandable tables, assessment checklists, system diagrams, etc.). Phase 2 builds the selected treatments as interactive slice components.
+## Productivity & Tooling Skills
 
-**Usage:** `/blog-enhance Content/Signal/Drafts/your-draft.md`
+| Skill | Description |
+|-------|-------------|
+| [skill-creator](skills/skill-creator/) | Create, test, benchmark, and optimize skills |
+| [claude-automation-recommender](skills/claude-code-setup/claude-automation-recommender/) | Analyze codebase and recommend Claude Code automations |
+| [claude-md-improver](skills/claude-md-management/claude-md-improver/) | Audit and improve CLAUDE.md files |
+| [frontend-design](skills/frontend-design/) | Production-grade frontend interfaces with high design quality |
+| [playground](skills/playground/) | Self-contained HTML playgrounds with interactive controls |
+| [writing-rules](skills/hookify/writing-rules/) | Hookify rule syntax and patterns |
+| [stripe-best-practices](skills/stripe-best-practices/) | Best practices for Stripe integrations |
+
+## Channel Skills
+
+| Skill | Description |
+|-------|-------------|
+| [discord:access](skills/discord/access/) | Discord channel access management |
+| [discord:configure](skills/discord/configure/) | Discord channel setup |
+| [telegram:access](skills/telegram/access/) | Telegram channel access management |
+| [telegram:configure](skills/telegram/configure/) | Telegram channel setup |
+
+## Example Skills
+
+| Skill | Description |
+|-------|-------------|
+| [example-skill](skills/example-plugin/example-skill/) | Reference template for skill structure |
+| [example-command](skills/example-plugin/example-command/) | Example user-invoked command in skills format |
 
 ## Installation
 
-Copy the `skills/` directory into your project's `.claude/skills/` folder:
+Copy individual skills into your project's `.claude/skills/` folder:
 
 ```bash
-cp -r skills/ your-project/.claude/skills/
+cp -r skills/copyreview/ your-project/.claude/skills/copyreview/
 ```
 
 ## License
